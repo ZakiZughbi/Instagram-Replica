@@ -1,0 +1,7 @@
+{% extends 'post_app/base.html' %}
+{% block content %}
+<div class="logout">
+    <h2 class="logout-h2">You haved been logged of your account </h2>
+    <a class="logout-a" href="{% url 'login' %}">Login Again</a>
+</div>
+{% endblock content%}

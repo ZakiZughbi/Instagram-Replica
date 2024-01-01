@@ -1,0 +1,11 @@
+{% extends 'post_app/base.html' %}
+{% block content %}
+<h1>Login</h1>
+<div class="register">
+    <form class="site" method="post">
+        {% csrf_token %}
+        {{form}}
+        <input class="submit" type="submit" value="Login">
+    </form>
+</div>
+{% endblock content%}

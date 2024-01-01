@@ -1,0 +1,21 @@
+{% extends 'post_app/base.html' %}
+{% block content %}
+<img class="profile-img" src=" {{ user.profile.image.url }}"></img>
+<div class="info">
+    <p>{{ user.username }}</p>
+    <p>{{ user.email }}</p>
+</div>
+
+<form class="profile" method="post" enctype="multipart/form-data" style="background:#fff;">
+    {% csrf_token %}
+    {{form}}
+    <div class="rightForm">
+        {{u_form}}
+    </div>
+    <div class="leftForm">
+        {{p_form}}
+    <input class="profileSubmit" type="submit" value="Submit">
+    </div>
+</form>
+
+{% endblock content%}
