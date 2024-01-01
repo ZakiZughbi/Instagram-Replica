@@ -1,0 +1,12 @@
+{% extends 'post_app/base.html' %}
+{% block content %}
+<h1>Delete Post</h1>
+<div class="register">
+    <form class="site" method="post">
+        {% csrf_token %}
+        <h2>Are you sure you want to delete this post</h2>
+        <button type="submit">Yes, Delete</button>
+        <a href="{% url 'post-detail' object.id %}">Cancle</a>
+    </form>
+</div>
+{% endblock content%}

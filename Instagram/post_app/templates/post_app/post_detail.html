@@ -1,0 +1,15 @@
+{% extends 'post_app/base.html' %}
+{% block content %}
+<div class="all-posts">
+    <div class="post">
+        <img id="img-post" src="{{ object.image.url }}">
+        <p>{{object.content}}</p>
+    </div>
+    {% if object.author == user %}
+        <div class="post-options">
+            <a href="{% url 'post-update' object.id %}">Update</a>
+            <a href="{% url 'post-delete' object.id %}">Delete</a>
+        </div>
+    {% endif %}
+</div>
+{% endblock content%}

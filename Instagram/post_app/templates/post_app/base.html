@@ -1,0 +1,53 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+        <title></title>
+    </head>
+    <body>
+        <!-- <nav>
+            <div class="options">
+                {% if user.is_authenticated %}
+                <div class="left">
+                    <a  id="logo" href="{% url 'home' %}">Website</a>
+                    <a href="{% url 'home' %}">Home</a>
+                    <a href="{% url 'about' %}">About</a>
+                </div>
+                <div class="right">
+                    <a class="post-create" href="{% url 'post-create' %}">Post</a>
+                    <a href="{% url 'profile' user.username %}">Profile</a>
+                    <a href="{% url 'logout' %}">Logout</a>
+                </div>
+                {% else %}
+                <div class="left">
+                    <a  id="logo" href="{% url 'home' %}">Website</a>
+                    <a href="{% url 'home' %}">Home</a>
+                    <a href="{% url 'about' %}">About</a>
+                </div>
+                <div class="right">
+                    <a href="{% url 'login' %}">Login</a>
+                    <a href="{% url 'register' %}">Register</a>
+                </div>
+                {% endif %}
+            </div>
+        </nav> -->
+
+        <nav>
+            <img class="insta-logo" src="media/profile_pics/insta-logo.png" alt="instagram">
+            <input type="text" placeholder="Search">
+            {% if user.is_authenticated %}
+            <a href="#"><img id="gear" src="media/profile_pics/settings.png" alt="settings"></a>
+            <a href="{% url 'profile' user.username %}"><img src="media/profile_pics/profile.png" alt="profile"></a>
+            <a href="{% url 'post-create' %}"><img src="media/profile_pics/post.png" alt="post"></a>
+            {% else %}
+            <a id="login" href="{% url 'login' %}">Log In</a>
+            <a id="signup" href="{% url 'signup' %}">Sign Up</a>
+            {% endif %}
+        </nav>
+
+        {% block content %}{% endblock %}
+        <script src="{% static 'app.js' %}"></script>
+    </body>
+</html>

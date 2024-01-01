@@ -1,0 +1,19 @@
+{% extends "post_app/base.html" %}
+{% block content %}
+
+{% for post in posts %}
+    <div class="user-post">
+        <div class="profile">
+                {% for userpro in porfiles %}
+                    {% if post.author.username == userpro.user.username %}
+                        <img src="{{userpro.image.url}}">
+                        <p>{{ userpro.user.username }}</p>
+                    {% endif %}
+                {% endfor %}
+                    <img id="img-post" src="{{ post.image.url }}">
+                    <p>{{post.content}}</p>
+        </div>
+    </div>
+{% endfor %}
+
+{% endblock %}

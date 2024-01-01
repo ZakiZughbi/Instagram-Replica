@@ -1,0 +1,9 @@
+{% extends 'post_app/base.html' %}
+{% block content %}
+    <h1>{{ view.kwargs.username }}</h1>
+
+    {% for post in posts %}
+        <img id="img-post" src="{{ post.image.url }}">
+        <p>{{post.content}}</p>
+    {% endfor %}
+{% endblock content%}

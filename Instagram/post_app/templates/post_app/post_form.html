@@ -1,0 +1,11 @@
+{% extends 'post_app/base.html' %}
+{% block content %}
+<h1>Create Post</h1>
+<div class="register">
+    <form class="site" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form }}
+        <input class="submit" type="submit" value="Post">
+    </form>
+</div>
+{% endblock content%}
