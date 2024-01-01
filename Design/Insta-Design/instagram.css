@@ -1,0 +1,613 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica Neue;
+}
+
+body{background: #FAFAFA;}
+
+/* Nav Bar */
+nav{
+    width: 100%;
+    height: 80px;
+    background: #FFFFFF;
+    position: relative;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.insta-logo{
+    height: 40px;
+    width: auto;
+    margin: 20px;
+    position: absolute;
+    left: 200px;
+}
+
+nav #signup, #login{
+    padding: 7px;
+    text-decoration: none;
+    border-radius: 4px;
+    position: absolute;
+    margin: 25px;
+}
+
+nav #signup{
+    color: #FFFFFF;
+    background: #2492F3;
+    right: 220px;
+}
+
+nav #login{
+    color: #2492F3;
+    right: 140px;
+}
+
+nav input{
+    display: inline;
+    position: absolute;
+    left: 43%;
+    top: 30px;
+    border: 1px solid #DBDBDB;
+    background: #FAFAFA;
+    padding: 5px 18px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+nav input::placeholder{
+    color: #999999;
+    text-align: center;
+}
+
+
+/* img nav */
+nav img{
+    width: 40px;
+    margin: 15px 1.4%;
+    float: right;
+}
+
+nav #gear{
+    margin-right: 70px;
+}
+
+nav img::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* Profile Page */
+
+.profile-info{
+    position: relative;
+    margin: 70px 0;
+}
+
+.profile-pic{
+    height: 150px;
+    width: 10%;
+    border-radius: 100%;
+    display: inline;
+    position: absolute;
+    left: 22.5%;
+}
+
+.profile-content h2{
+    font-weight: 300;
+    display: inline;
+    font-size: 2em;
+    color: #252525;
+}
+
+.follow{
+    color: #FFFFFF;
+    background: #2492F3;
+    border-radius: 5px;
+    padding: 7px 10px;
+    font-size: 15px;
+    font-weight: 400;
+    border: 0;
+    position: relative;
+    top: -7px;
+    left: 5%;
+}
+
+.stats p{
+    display: inline;
+    margin: 0 35px;
+    margin-left: 0;
+}
+
+.stats{margin-top: 15px;}
+
+.quotes{
+    text-align: left;
+    margin-top: 20px;
+}
+
+.quotes p{margin: 5px 0;}
+
+.profile-content{
+    text-align: left;
+    position: absolute;
+    left: 40%;
+    margin-top: -10px;
+}
+
+.img{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.posts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    grid-gap: 2.5%;
+    margin: 350px 18% 80px;;
+    border-top: 1px solid #DEDEDE;
+    padding-top: 50px;
+}
+
+
+/* Signup Form */
+.signup-form{
+    color: #9CA19C;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+    margin: 15px 38%;
+    padding: 50px 10px;
+}
+
+.logo{
+    width: 60%;
+    height: auto;
+    margin: -10px 20% 10px;
+}
+
+.signup-form h2{
+    font-size: 17px;
+    padding: 0 10% 10px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.signup-form input{
+    display: block;
+    border: 1px solid #DBDBDB;
+    background: #FAFAFA;
+    padding: 10px 7px;
+    font-size: 13px;
+    border-radius: 4px;
+    width: 80%;
+    margin: 2% 10%;
+}
+
+.signup-form input::placeholder{color: #999999;}
+
+.signup-form input:nth-child(6){margin-bottom: 22px;}
+
+.signup-form a{
+    color: #FFFFFF;
+    background: #2492F3;
+    text-decoration: none;
+    padding: 7px 31%;
+    border-radius: 4px;
+    font-size: 15px;
+    position: relative;
+    left: 10%;
+}
+
+.signup-form a:nth-child(5){
+    padding: 0;
+    margin: 0;
+    color: #00306B;
+    background: none;
+    display: block;
+    font-size: 13px;
+    margin: 50px 23% 0;
+}
+
+.signup-form p{
+    font-size: 15px;
+    text-align: center;
+    padding: 20px 12% 0;
+}
+
+.login-link{
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+    margin: 15px 38%;
+    padding: 27px 5%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.login-link a{
+    text-decoration: none;
+    color: #2492F3;
+}
+
+
+/* Login Form */
+.signup-link{
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+    margin: 15px 38%;
+    padding: 27px 3%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.signup-link a{
+    text-decoration: none;
+    color: #2492F3;
+}
+
+.login-a{
+    top: 18px;
+    padding: 7px 33% !important;
+}
+
+.login-logo{margin-bottom: 30px;}
+
+.signup-form a:nth-child(5){
+    padding: 0;
+    margin: 0;
+    color: #00306B;
+    background: none;
+    display: block;
+    font-size: 13px;
+    margin: 50px 23% 0;
+}
+
+.delete{
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    margin: 25px 30%;
+    padding: 40px 10px;
+}
+
+.delete p{
+    font-size: 20px;
+    text-align: center;
+    padding: 0 0 50px;
+}
+
+.delete a{
+    font-size: 18px;
+    text-decoration: none;
+    padding: 1.5%;
+    position: relative;
+    top: 0px;
+    left: 33%;
+}
+
+.delete a:nth-child(2){
+    background: #F32424;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.delete a:nth-child(3){
+    color: #2492F3;
+    margin-left: 10%;
+}
+
+.post{
+    background: #FFFFFF;
+    margin: 35px 18%;
+    position: relative;
+    border: 1px solid #E6E6E6;
+}
+
+.post-pic{
+    width: 65%;
+    height: auto;
+    border-left: 1px solid #E6E6E6;
+    margin-bottom: -3px;
+}
+
+.post-profile{
+    display: inline;
+    position: absolute;
+    border-bottom: 1px solid #E6E6E6;
+    width: 35%;
+}
+
+.post-profile-pic, .comments img{
+    border-radius: 100px;
+    width: 35px;
+    height: 35px;
+    margin: 5%;
+}
+
+.post-profile p:nth-child(2){
+    font-size: 15px;
+    font-weight: 500;
+    position: absolute;
+    left: 24%;
+    top: 18px;
+}
+
+.post-profile p:nth-child(4){
+    font-size: 12px;
+    color: #252525;
+    font-weight: 400;
+    position: absolute;
+    left: 24%;
+    top: 38px;
+}
+
+.post-profile li{
+    list-style-type: disc;
+    position: absolute;
+    left: 39%;
+    top: 18px;
+}
+
+.post-profile li a{
+    color: #2492F3;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+    left: -10px;
+}
+
+.post-comment{
+    border: 1px solid #DBDBDB;
+    background: #FAFAFA;
+    padding: 6px 7px;
+    font-size: 13px;
+    border-radius: 4px;
+    width: 20%;
+    margin-left: 15px;
+    position: absolute;
+    bottom: 8px;
+}
+
+.post-opts{
+    padding: 1% 2%;
+    display: inline;
+    position: absolute;
+    border-bottom: 1px solid #E6E6E6;
+    width: 35%;
+    top: 450px;
+}
+
+.post-opts p:nth-child(4), .home-opts p:nth-child(4){
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+}
+
+.post-comment::placeholder{color: #999999;}
+
+.post-opts p:nth-child(5){
+    font-size: 10px;
+    color: #999999;
+    font-weight: 400;
+}
+
+.post-opts img, .home-opts img{
+    width: 27px;
+    height: 27px;
+    margin: 5px 14px 7px 0;
+}
+
+.comments{
+    display: inline;
+    position: absolute;
+    border-bottom: 1px solid #E6E6E6;
+    width: 35%;
+    height: 380px;
+    top: 70px;
+    overflow: scroll;
+}
+
+
+.comments li{
+    list-style-type: none;
+    font-size: 15px;
+}
+
+.comments li p{
+    display: block;
+    width: 70%;
+    position: relative;
+    left: 25%;
+    top: -50px;
+    margin-bottom: -20px;
+}
+
+.comments span{font-weight: 500;}
+
+.user-post{
+    margin: 100px 25%;
+    border: 1px solid grey;
+    padding: 20px 2%;
+    border-radius: 30px;
+}
+
+.user-post p{
+    display: inline-block;
+    position: relative;
+    bottom: 15px;
+    font-weight: 500;
+}
+
+.profile img:nth-child(3){
+    width: 100%;
+    height: auto;
+}
+
+.home-opts{width: 100%;}
+
+.home-opts span{font-weight: 500;}
+
+.home-opts p{font-weight: 400;}
+
+
+.profile img:nth-child(1){
+    border-radius: 100px;
+    width: 35px;
+    height: 35px;
+    margin: 1%;
+}
+
+
+/* Reset Password */
+.reset-password-form{
+    color: #9CA19C;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+    margin: 15px 36%;
+    padding: 50px 10px;
+}
+
+.lock{
+    width: 30%;
+    margin: -25px 34% 0;
+}
+
+.reset-password-form p:nth-child(2){
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.reset-password-form p:nth-child(3){
+    font-size: 15px;
+    text-align: center;
+    margin: 0 10% 15px;
+}
+
+.reset-password-form a:nth-child(5){
+    display: block;
+    color: #FFFFFF;
+    background: #2492F3;
+    text-decoration: none;
+    margin: 15px 10%;
+    padding: 7px;
+    border-radius: 4px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.reset-password-form p:nth-child(6){
+    font-weight: 600;
+    color: #999999;
+    text-align: center;
+    font-size: 13px;
+}
+
+.reset-password-form p:nth-child(6):before,
+.reset-password-form p:nth-child(6):after {
+     background-color: #EFEFEF;
+     content: "";
+     display: inline-block;
+     height: 1.5px;
+     vertical-align: middle;
+     width: 30%;
+     margin: 30px 0 10px;
+}
+.reset-password-form p:nth-child(6):before {
+     right: 0.5em;
+     margin-left: -50%;
+}
+.reset-password-form p:nth-child(6):after {
+     left: 0.5em;
+     margin-right: -50%;
+}
+.reset-password-form a:nth-child(7){
+    display: block;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    padding: 3%;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 10% 80px;
+}
+
+.reset-password-form a:nth-child(8){
+    display: block;
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    background: #FAFAFA;
+    border: 1px solid #E6E6E6;
+    text-align: center;
+    padding: 12px 3%;
+    margin: 0 -10px -50px;
+}
+
+.reset-password-form input{
+    display: block;
+    border: 1px solid #DBDBDB;
+    background: #FAFAFA;
+    padding: 10px 7px;
+    font-size: 13px;
+    border-radius: 4px;
+    width: 80%;
+    margin: 2% 10%;
+}
+
+
+/* Post Form */
+
+.post-form{
+    color: #9CA19C;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+    margin: 15px 22%;
+    padding: 50px 10px;
+}
+
+.post-form button{
+    display: inline-block;
+    padding: 1%;
+    border-radius: 4px;
+    background: #999999;
+    color: #FFFF;
+    font-weight: 500;
+    margin: 0 10% 20px;
+    font-size: 15px;
+}
+
+.post-form a:nth-child(2){
+    padding: 1%;
+    border-radius: 4px;
+    background: #2492F3;
+    color: #FFFF;
+    text-decoration: none;
+    margin-left: 37%;
+}
+
+.post-form a:nth-child(3){
+    color: #2492F3;
+    text-decoration: none;
+    padding: 1%;
+    margin-left: 3%;
+}
+
+.post-form textarea{
+    margin: 0 10% 20px;
+    font-size: 20px;
+    width: 80%;
+    height: 70px;
+}
+
+/* Profile Settings */
